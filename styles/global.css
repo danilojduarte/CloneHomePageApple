@@ -41,7 +41,7 @@ header nav ul li {
 main section {
     text-align: center;
 }
-main section .text-wrapper {
+main .main-section .text-wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -50,28 +50,36 @@ main section .text-wrapper {
     align-items: center;
     margin-top: 51px;
 }
-main section h1 {
+main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
     font-weight: bold;
     line-height: 4rem;
     letter-spacing: -0.28px;
 }
-main section h2 {
+main .main-section h2 {
     color: var(--subtitle-color);
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 2rem;
     letter-spacing: 0.11px;
+    margin-bottom: 1rem;
 }
-
-main section a {
+main .main-section sub {
+    font-size: 0.9rem;
+}
+main .main-section a {
     color: var(--action-color);
     line-height: 1.8rem;
     font-size: 1.2rem;
     text-decoration: none;
+    cursor: pointer;
 }
-main section img {
+main .main-section a:hover{
+    text-decoration:underline;
+    transition: all .3s ease-in-out;
+}
+main .main-section img {
     width: 100%;
     height: auto;
 }
