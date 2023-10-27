@@ -40,6 +40,7 @@ header nav ul li {
 /* Inicio Main Section */
 main section {
     text-align: center;
+    position: relative;
 }
 main .main-section .text-wrapper {
     position: absolute;
@@ -82,4 +83,18 @@ main .main-section a:hover{
 main .main-section img {
     width: 100%;
     height: auto;
+}
+
+main .spireted-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .spireted-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
 }
