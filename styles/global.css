@@ -5,6 +5,7 @@
     --title-primary-color: #f5f5f7;
     --subtitle-color: #6e6e73;
     --action-color: #2997ff;
+    --spirite-main-color: #ded289;
 
 }
 
@@ -51,6 +52,7 @@ main .main-section .text-wrapper {
     align-items: center;
     margin-top: 51px;
 }
+
 main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
@@ -85,16 +87,29 @@ main .main-section img {
     height: auto;
 }
 
-main .spireted-section {
+main .spireted-section div {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
 main .spireted-section > div:first-child {
     top: 105px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 60%;
+}
+main .spireted-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--spirite-main-color);
+    letter-spacing: -0.6px;
+}
+main .spireted-section p {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+
 }
