@@ -39,10 +39,6 @@ header nav ul li {
 }
     
 /* Inicio Main Section */
-main section {
-    text-align: center;
-    position: relative;
-}
 main .main-section .text-wrapper {
     position: absolute;
     left: 50%;
@@ -52,7 +48,19 @@ main .main-section .text-wrapper {
     align-items: center;
     margin-top: 51px;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+main section {
+    text-align: center;
+    position: relative;
+}
+main section img {
+    width: 100%;
+    height: auto;
+}
 main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
@@ -82,15 +90,13 @@ main .main-section a:hover{
     text-decoration:underline;
     transition: all .3s ease-in-out;
 }
-main .main-section img {
-    width: 100%;
-    height: auto;
-}
-
 main .spireted-section div {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+main .spireted-section div:last-child{
+    bottom: 50px;
 }
 main .spireted-section > div:first-child {
     top: 105px;
@@ -111,5 +117,11 @@ main .spireted-section p {
     font-size: 1.5rem;
     line-height: 1.8rem;
     letter-spacing: 0.11px;
-
+}
+main .spireted-section span {
+    color: var(--title-primary-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
 }
