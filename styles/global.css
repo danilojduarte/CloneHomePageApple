@@ -7,8 +7,6 @@
     --subtitle-color: #6e6e73;
     --action-color: #2997ff;
     --spirite-main-color: #ded289;
-    
-
 }
 
 /* Inicio Header */
@@ -54,6 +52,17 @@ main section img {
     width: 100%;
     height: auto;
 }
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+main section a:hover{
+    text-decoration:underline;
+    transition: all .3s ease-in-out;
+}
 main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
@@ -71,17 +80,6 @@ main .main-section h2 {
 }
 main .main-section sub {
     font-size: 0.9rem;
-}
-main .main-section a {
-    color: var(--action-color);
-    line-height: 1.8rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-main .main-section a:hover{
-    text-decoration:underline;
-    transition: all .3s ease-in-out;
 }
 main .main-section .text-wrapper {
     position: absolute;
@@ -130,33 +128,28 @@ main .spireted-section span {
 
 /* Section Iphone 14 */
 main .iphone-section h2 {
-    color: var();
+    color: var(--text-dark);
     font-size: 3rem;
     font-weight: bold;
     line-height: 4rem;
     letter-spacing: -0.28px;
 }
-main .iphone-section h2 {
-    color: var(--subtitle-color);
+main .iphone-section p {
+    color: var(--text-dark);
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 2rem;
     letter-spacing: 0.11px;
     margin-bottom: 1rem;
 }
+main .iphone-section .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 main .iphone-section sub {
     font-size: 0.9rem;
-}
-main .iphone-section a {
-    color: var(--action-color);
-    line-height: 1.8rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-main .iphone-section a:hover{
-    text-decoration:underline;
-    transition: all .3s ease-in-out;
 }
 main .iphone-section .text-wrapper {
     position: absolute;
